@@ -10,11 +10,44 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        macro_ver: macro_ver {
+        harpoon1: harpoon1 {
             compatible = "zmk,behavior-macro";
-            label = "macro_version";
             #binding-cells = <0>;
-            bindings = <&kp RET>;
+            bindings = <&kp SPACE &kp NUMBER_1>;
+            label = "HARPOON1";
+            wait-ms = <5>;
+        };
+
+        harpoon2: harpoon2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp NUMBER_2>;
+            label = "HARPOON2";
+            wait-ms = <5>;
+        };
+
+        harpoon3: harpoon3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp NUMBER_3>;
+            label = "HARPOON3";
+            wait-ms = <5>;
+        };
+
+        harpoon4: harpoon4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp NUMBER_4>;
+            label = "HARPOON4";
+            wait-ms = <5>;
+        };
+
+        browser_reset_size: browser_reset_size {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(PLUS) &kp LG(N0)>;
+            label = "BROWSER_RESET_SIZE";
+            wait-ms = <5>;
         };
 
         #endif
@@ -61,7 +94,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                              &trans  &trans              &trans              &trans               &trans               &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                               &none   &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)  &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none           &trans  &trans      &trans  &trans  &none   &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW         &kp RIGHT_ARROW      &kp BACKSPACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans      &trans                  &trans              &trans              &trans               &trans               &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans      &trans                  &trans              &harpoon1           &harpoon2            &harpoon3            &harpoon4      &trans
 &trans  &trans  &trans  &trans  &trans          &kp LEFT_SHIFT  &trans  &trans      &trans  &trans  &trans                      &trans              &trans               &trans               &trans         &trans
             >;
         };
