@@ -20,14 +20,14 @@
         #include "macros.dtsi"
     #include "version.dtsi"
 
-        hm: homerow_mods {
+        homerow_mods: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
+            bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -36,11 +36,11 @@
 
         default_layer {
             bindings = <
-&none      &kp N1        &kp N2          &kp N3     &kp N4  &kp N5  &none                                                               &none      &kp N6  &kp N7     &kp N8     &kp N9     &kp N0            &none
-&kp TAB    &kp Q         &kp W           &kp E      &kp R   &kp T   &none                                                               &none      &kp Y   &kp U      &kp I      &kp O      &kp P             &none
-&kp ESC    &kp A         &kp S           &kp D      &kp F   &kp G   &none  &kp LCMD  &none                 &kp LGUI          &none      &none      &kp H   &kp J      &kp K      &kp L      &kp BACKSPACE     &none
-&kp LSHFT  &kp Z         &kp X           &kp C      &kp V   &kp B                    &none                 &none                                   &kp N   &kp M      &kp COMMA  &kp DOT    &kp LA(NUMBER_1)  &kp RSHFT
-&none      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &mo 3           &mo 1  &mo 2     &kp LS(LEFT_ALT)      &kp LS(LEFT_ALT)  &kp ENTER  &kp SPACE          &kp LC(B)  &kp RCTRL  &kp RSHFT  &kp RIGHT_ALT     &none
+&none      &kp N1                 &kp N2                 &kp N3                 &kp N4                     &kp N5  &none                                                               &none      &kp N6                 &kp N7     &kp N8                     &kp N9     &kp N0            &none
+&kp TAB    &kp Q                  &homerow_mods LG(W) W  &kp E                  &homerow_mods LG(LS(R)) R  &kp T   &none                                                               &none      &homerow_mods LC(Y) Y  &kp U      &homerow_mods LG(LA(I)) I  &kp O      &kp P             &none
+&kp ESC    &kp A                  &homerow_mods LG(S) S  &kp D                  &kp F                      &kp G   &none  &kp LCMD  &none                 &kp LGUI          &none      &none      &kp H                  &kp J      &kp K                      &kp L      &kp BACKSPACE     &none
+&kp LSHFT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X  &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B                    &none                 &none                                   &kp N                  &kp M      &kp COMMA                  &kp DOT    &kp LA(NUMBER_1)  &kp RSHFT
+&none      &kp LEFT_ALT           &kp LEFT_SHIFT         &kp LCTRL              &mo 3                              &mo 1  &mo 2     &kp LS(LEFT_ALT)      &kp LS(LEFT_ALT)  &kp ENTER  &kp SPACE                         &kp LC(B)  &kp RCTRL                  &kp RSHFT  &kp RIGHT_ALT     &none
             >;
         };
 
