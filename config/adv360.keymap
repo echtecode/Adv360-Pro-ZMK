@@ -1,112 +1,82 @@
+
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+
+/* THIS FILE WAS GENERATED!
+ *
+ * This file was generated automatically. You may or may not want to
+ * edit it directly.
+ */
+
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/backlight.h>
 
 / {
-    behaviors {
-        #include "macros.dtsi"
-      #include "version.dtsi"
-      #ifndef VERSION_MACRO
+  behaviors {
+    #include "macros.dtsi"
+    #include "version.dtsi"
 
-        harpoon1: harpoon1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &kp NUMBER_1>;
-            label = "HARPOON1";
-            wait-ms = <5>;
-        };
-
-        harpoon2: harpoon2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &kp NUMBER_2>;
-            label = "HARPOON2";
-            wait-ms = <5>;
-        };
-
-        harpoon3: harpoon3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &kp NUMBER_3>;
-            label = "HARPOON3";
-            wait-ms = <5>;
-        };
-
-        harpoon4: harpoon4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &kp NUMBER_4>;
-            label = "HARPOON4";
-            wait-ms = <5>;
-        };
-
-        browser_reset_size: browser_reset_size {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(PLUS) &kp LG(N0)>;
-            label = "BROWSER_RESET_SIZE";
-            wait-ms = <5>;
-        };
-
-        #endif
-
-        homerow_mods: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
+    hm: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick_tap_ms = <175>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
     };
-
-    macros {
-    };
+  };
 
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+
+        default_layer {
             bindings = <
-&trans     &kp N1                 &kp N2                 &kp N3                 &kp N4                     &kp N5  &trans                                                               &trans     &kp N6                 &kp N7     &kp N8                     &kp N9           &kp N0            &trans
-&kp TAB    &kp Q                  &homerow_mods LG(W) W  &kp E                  &homerow_mods LG(LS(R)) R  &kp T   &none                                                                &none      &homerow_mods LC(Y) Y  &kp U      &homerow_mods LG(LA(I)) I  &kp O            &kp P             &trans
-&kp ESC    &kp A                  &homerow_mods LG(S) S  &kp D                  &kp F                      &kp G   &none   &kp LCMD  &trans                &trans            &kp LCMD   &none      &kp H                  &kp J      &kp K                      &kp L            &kp BACKSPACE     &trans
-&kp LSHFT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X  &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B                     &trans                &trans                                  &kp N                  &kp M      &kp COMMA                  &kp DOT          &kp LA(NUMBER_1)  &kp RSHFT
-&trans     &kp LEFT_ALT           &kp LEFT_SHIFT         &kp LCTRL              &mo 3                              &mo 1   &mo 2     &kp LS(LEFT_ALT)      &kp LS(LEFT_ALT)  &kp ENTER  &kp SPACE                         &kp LC(B)  &kp RCTRL                  &kp RIGHT_SHIFT  &kp RIGHT_ALT     &trans
+ &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
+   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &kp Q                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                         &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
-        code {
+        layer_keypad {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT       &trans                                      &trans  &kp CARET          &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT       &none                                       &none   &kp CARET          &kp MINUS        &kp UNDERSCORE         &kp AMPERSAND         &kp ASTERISK           &trans
-&trans  &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET  &none   &trans  &trans      &trans  &trans  &none   &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN      &kp BACKSLASH          &trans
-&trans  &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL                         &trans      &trans                  &kp PLUS           &kp COLON        &kp SEMICOLON          &kp QUESTION          &kp PIPE               &trans
-&trans  &trans           &trans         &trans                &trans                               &trans  &trans  &trans      &trans  &kp F1  &kp F2                     &kp F3           &kp F4                 &kp F5                &trans                 &trans
+ &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &trans                                                                 &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                         &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
             >;
         };
 
-        navigation {
+        layer_fn {
             bindings = <
-&trans  &kp C_BRI_DEC  &kp C_BRI_INC  &trans  &trans          &trans  &trans                                      &kp C_PREV  &kp C_PP            &kp C_NEXT          &kp K_MUTE           &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &trans
-&trans  &trans         &trans         &trans  &trans          &trans  &none                                       &none       &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)  &trans           &trans
-&trans  &trans         &trans         &trans  &kp LEFT_SHIFT  &trans  &none   &trans  &trans      &trans  &trans  &none       &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW         &kp RIGHT_ARROW      &kp BACKSPACE    &trans
-&trans  &trans         &trans         &trans  &trans          &trans                  &trans      &trans                      &trans              &harpoon1           &harpoon2            &harpoon3            &harpoon4        &trans
-&trans  &trans         &trans         &trans  &trans                  &trans  &trans  &trans      &trans  &trans  &kp TAB                         &trans              &trans               &trans               &trans           &trans
+ &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+ &trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none  &trans  &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
             >;
         };
 
-        numbers {
+        layer_mod {
             bindings = <
-&bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &bt BT_CLR                                    &none        &none         &none   &none   &none   &none      &none
-&bl BL_TOG       &bl BL_DEC    &bl BL_INC    &none         &none         &none  &none                                         &none        &kp PLUS      &kp N7  &kp N8  &kp N9  &kp MINUS  &none
-&rgb_ug RGB_TOG  &trans        &none         &none         &trans        &none  &bootloader  &none  &none      &trans  &none  &bootloader  &kp ASTERISK  &kp N4  &kp N5  &kp N6  &kp SLASH  &none
-&none            &none         &none         &none         &none         &none                      &none      &none                       &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp COMMA  &none
-&none            &none         &none         &none         &none                &none        &none  &none      &none   &none  &kp N0                     &kp N0  &none   &none   &none      &none
+  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
+  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
+  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
+  &none         &none         &none         &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
+  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
             >;
         };
+
     };
 };
