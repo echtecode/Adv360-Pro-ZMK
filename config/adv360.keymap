@@ -70,6 +70,38 @@
             label = "HARPOON4";
             wait-ms = <5>;
         };
+
+        tmux_next_session: tmux_next_session {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp RIGHT_PARENTHESIS>;
+            label = "TMUX_NEXT_SESSION";
+            wait-ms = <5>;
+        };
+
+        tmux_prev_session: tmux_prev_session {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp LEFT_PARENTHESIS>;
+            label = "TMUX_PREV_SESSION";
+            wait-ms = <5>;
+        };
+
+        tmux_next_window: tmux_next_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp N>;
+            label = "TMUX_NEXT_WINDOW";
+            wait-ms = <5>;
+        };
+
+        tmux_prev_window: tmux_prev_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp N>;
+            label = "TMUX_PREV_WINDOW";
+            wait-ms = <5>;
+        };
     };
 
     keymap {
@@ -77,11 +109,11 @@
 
         base {
             bindings = <
-&none      &kp N1                 &kp N2                 &kp N3                     &kp N4                     &kp N5  &none                                                                &none      &kp N6                 &kp N7     &kp N8                     &kp N9     &kp N0            &kp LG(PLUS)
-&kp TAB    &kp Q                  &homerow_mods LG(W) W  &kp E                      &homerow_mods LG(LS(R)) R  &kp T   &none                                                                &none      &homerow_mods LC(Y) Y  &kp U      &homerow_mods LG(LA(I)) I  &kp O      &kp P             &kp LG(MINUS)
-&kp ESC    &kp A                  &homerow_mods LG(S) S  &kp D                      &kp F                      &kp G   &none  &kp LCTRL  &none                 &none             &kp RCTRL  &none      &kp H                  &kp J      &kp K                      &kp L      &kp BACKSPACE     &kp LG(NUMBER_0)
-&kp LSHFT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X  &homerow_mods LG(C) C      &homerow_mods LG(V) V      &kp B                     &none                 &none                                   &kp N                  &kp M      &kp COMMA                  &kp DOT    &kp LA(NUMBER_1)  &kp RSHFT
-&none      &kp LEFT_ALT           &kp LEFT_SHIFT         &tapdance_cmd_cmdbacktick  &mo 3                              &mo 1  &mo 2      &kp LS(LEFT_ALT)      &kp LS(LEFT_ALT)  &kp ENTER  &kp SPACE                         &kp LC(B)  &tapdance_cmd_cmdbacktick  &kp RSHFT  &kp RIGHT_ALT     &none
+&none      &kp N1                 &kp N2                     &kp N3                 &kp N4                     &kp N5  &none                                                                             &none               &kp N6                 &kp N7     &kp N8                     &kp N9                     &kp N0            &kp LG(PLUS)
+&kp TAB    &kp Q                  &homerow_mods LG(W) W      &kp E                  &homerow_mods LG(LS(R)) R  &kp T   &tmux_prev_window                                                                 &tmux_next_window   &homerow_mods LC(Y) Y  &kp U      &homerow_mods LG(LA(I)) I  &kp O                      &kp P             &kp LG(MINUS)
+&kp ESC    &kp A                  &homerow_mods LG(S) S      &kp D                  &kp F                      &kp G   &tmux_prev_session  &kp LCTRL  &none                 &none             &kp RCTRL  &tmux_next_session  &kp H                  &kp J      &kp K                      &kp L                      &kp BACKSPACE     &kp LG(NUMBER_0)
+&kp LSHFT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X      &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B                                  &none                 &none                                            &kp N                  &kp M      &kp COMMA                  &kp DOT                    &kp LA(NUMBER_1)  &kp RSHFT
+&none      &kp LEFT_ALT           &tapdance_cmd_cmdbacktick  &kp LCTRL              &mo 3                              &mo 1               &mo 2      &kp LS(LEFT_ALT)      &kp LS(LEFT_ALT)  &kp ENTER  &kp SPACE                                  &kp LC(B)  &kp RCTRL                  &tapdance_cmd_cmdbacktick  &kp RIGHT_ALT     &none
             >;
         };
 
