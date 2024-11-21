@@ -139,11 +139,11 @@
 
         numbers {
             bindings = <
-&bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &bt BT_CLR_ALL                                  &trans        &none         &none         &none         &none         &none      &none
-&bl BL_TOG       &bl BL_DEC    &bl BL_INC    &none         &none         &none       &none                                           &none         &kp LG(PLUS)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &none
-&rgb_ug RGB_TOG  &none         &none         &none         &none         &none       &bootloader     &none  &none      &none  &none  &bootloader   &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &none
-&none            &none         &none         &none         &none         &none                              &none      &none                       &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &none
-&none            &none         &none         &none         &none                     &none           &none  &none      &none  &none  &kp NUMBER_0                &kp NUMBER_0  &none         &none         &none      &none
+&bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &bt BT_CLR_ALL                                  &trans        &none         &none         &none         &none         &none      &none
+&bl BL_TOG       &bl BL_DEC       &bl BL_INC    &none         &none         &none       &none                                           &none         &kp LG(PLUS)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &none
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &none         &none         &none         &none       &bootloader     &none  &none      &none  &none  &bootloader   &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &none
+&none            &none            &none         &none         &none         &none                              &none      &none                       &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &none
+&none            &none            &none         &none         &none                     &none           &none  &none      &none  &none  &kp NUMBER_0                &kp NUMBER_0  &none         &none         &none      &none
             >;
         };
     };
