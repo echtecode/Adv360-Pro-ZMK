@@ -146,5 +146,15 @@
 &none            &none            &none         &none         &none                     &none           &none  &none      &none  &none  &kp NUMBER_0                &kp NUMBER_0  &none         &none         &none      &none
             >;
         };
+
+        aerospace {
+            bindings = <
+&trans  &trans  &trans                 &trans  &trans         &trans  &trans                                             &trans         &trans         &trans         &trans         &trans         &trans  &trans
+&trans  &trans  &trans                 &trans  &trans         &trans  &trans                                             &trans         &kp LA(H)      &kp LA(J)      &kp LA(K)      &kp LA(L)      &trans  &trans
+&trans  &trans  &kp LA(LS(SEMICOLON))  &trans  &kp LA(LS(F))  &trans  &trans  &trans  &trans      &trans  &trans         &trans         &kp LA(LS(H))  &kp LA(LS(J))  &kp LA(LS(K))  &kp LA(LS(L))  &trans  &trans
+&trans  &trans  &trans                 &trans  &trans         &trans                  &trans      &trans                                &trans         &kp LA(SLASH)  &kp LA(COMMA)  &trans         &trans  &trans
+&trans  &trans  &trans                 &trans  &trans                 &trans  &trans  &trans      &trans  &kp LA(LS(A))  &kp LA(LS(B))                 &kp LA(LS(C))  &kp LA(LS(D))  &kp LA(LS(E))  &trans  &trans
+            >;
+        };
     };
 };
