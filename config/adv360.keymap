@@ -152,7 +152,7 @@
 &trans  &trans  &trans                 &trans  &trans         &trans  &trans                                             &trans         &trans         &trans         &trans         &trans         &trans         &trans
 &trans  &trans  &trans                 &trans  &trans         &trans  &trans                                             &trans         &kp LA(LS(J))  &kp LA(J)      &kp LA(LS(K))  &kp LA(K)      &trans         &trans
 &trans  &trans  &kp LA(LS(SEMICOLON))  &trans  &kp LA(LS(F))  &trans  &trans  &trans  &trans      &trans  &trans         &trans         &kp LA(LS(H))  &kp LA(H)      &kp LA(L)      &kp LA(LS(L))  &trans         &trans
-&trans  &trans  &trans                 &trans  &trans         &trans                  &trans      &trans                                &trans         &kp LA(SLASH)  &kp LA(COMMA)  &trans         &trans         &trans
+&trans  &trans  &trans                 &trans  &trans         &trans                  &trans      &trans                                &kp LA(LS(Z))  &kp LA(SLASH)  &kp LA(COMMA)  &kp LA(LS(X))  &trans         &trans
 &trans  &trans  &trans                 &trans  &trans                 &trans  &trans  &trans      &trans  &kp LA(LS(A))  &kp LA(LS(B))                 &kp LA(LS(C))  &kp LA(LS(D))  &kp LA(LS(E))  &kp LA(LS(G))  &trans
             >;
         };
