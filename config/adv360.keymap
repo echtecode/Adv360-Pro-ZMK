@@ -125,11 +125,11 @@
 
         base {
             bindings = <
-&none      &kp N1                 &kp N2                     &kp N3                 &kp N4                     &kp N5  &kp LC(LS(TAB))                                                  &kp LC(TAB)         &kp N6                         &kp N7                     &kp N8                     &kp N9                         &kp N0            &kp LG(PLUS)
-&kp TAB    &kp Q                  &homerow_mods LG(W) W      &kp E                  &homerow_mods LG(LS(R)) R  &kp T   &tmux_prev_window                                                &tmux_next_window   &homerow_mods LC(Y) Y          &kp U                      &homerow_mods LG(LA(I)) I  &kp O                          &kp P             &kp LG(MINUS)
-&kp ESC    &kp A                  &homerow_mods LG(S) S      &kp D                  &homerow_mods LA(LS(F)) F  &kp G   &tmux_prev_session  &kp LS(H)       &none      &none  &kp LS(L)  &tmux_next_session  &homerow_mods LC(LA(LS(H))) H  &homerow_mods LA(LS(J)) J  &homerow_mods LA(LS(K)) K  &homerow_mods LC(LA(LS(L))) L  &kp BACKSPACE     &kp LG(NUMBER_0)
-&kp LSHFT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X      &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B                                       &none      &none                                 &kp N                          &kp M                      &kp COMMA                  &kp DOT                        &kp LA(NUMBER_1)  &kp RSHFT
-&none      &kp LEFT_ALT           &tapdance_cmd_cmdbacktick  &kp LCTRL              &mo 3                              &mo 1               &kp LEFT_SHIFT  &mo 3      &mo 3  &kp ENTER  &kp SPACE                                          &kp LC(B)                  &kp RCTRL                  &tapdance_cmd_cmdbacktick      &kp RIGHT_ALT     &none
+&none      &kp N1                 &kp N2                     &kp N3                 &kp N4                     &kp N5  &kp LC(LS(TAB))                                                  &kp LC(TAB)         &kp N6                 &kp N7     &kp N8                     &kp N9                     &kp N0            &kp LG(PLUS)
+&kp TAB    &kp Q                  &homerow_mods LG(W) W      &kp E                  &homerow_mods LG(LS(R)) R  &kp T   &tmux_prev_window                                                &tmux_next_window   &homerow_mods LC(Y) Y  &kp U      &homerow_mods LG(LA(I)) I  &kp O                      &kp P             &kp LG(MINUS)
+&kp ESC    &kp A                  &homerow_mods LG(S) S      &kp D                  &homerow_mods LA(LS(F)) F  &kp G   &tmux_prev_session  &kp LS(H)       &none      &none  &kp LS(L)  &tmux_next_session  &kp H                  &kp J      &kp K                      &kp L                      &kp BACKSPACE     &kp LG(NUMBER_0)
+&kp LSHFT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X      &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B                                       &none      &none                                 &kp N                  &kp M      &kp COMMA                  &kp DOT                    &kp LA(NUMBER_1)  &kp RSHFT
+&none      &kp LEFT_ALT           &tapdance_cmd_cmdbacktick  &kp LCTRL              &mo 3                              &mo 1               &kp LEFT_SHIFT  &mo 3      &mo 3  &kp ENTER  &kp SPACE                                  &kp LC(B)  &kp RCTRL                  &tapdance_cmd_cmdbacktick  &kp RIGHT_ALT     &none
             >;
         };
 
@@ -160,6 +160,16 @@
 &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &none         &none         &none         &none       &bootloader     &none  &none      &none  &none  &bootloader   &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &none
 &none            &none            &none         &none         &none         &none                              &none      &none                       &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &none
 &none            &none            &none         &none         &none                     &none           &none  &none      &none  &none  &kp NUMBER_0                &kp NUMBER_0  &none         &none         &none      &none
+            >;
+        };
+
+        window_manager {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans             &trans         &trans         &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans             &trans         &trans         &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LC(LA(LS(H)))  &kp LA(LS(J))  &kp LA(LS(K))  &kp LC(LA(LS(L)))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans             &trans         &trans         &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                     &trans         &trans         &trans             &trans  &trans
             >;
         };
     };
