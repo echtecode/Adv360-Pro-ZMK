@@ -36,6 +36,13 @@
             #binding-cells = <0>;
             bindings = <&kp LCMD>, <&kp LG(GRAVE)>;
         };
+
+        tap: tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp LG(TAB)>;
+        };
     };
 
     macros {
