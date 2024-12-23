@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_COMMA_TAB";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp LG(TAB)>;
+            bindings = <&kp COMMA>, <&kp TAB>;
         };
     };
 
