@@ -196,11 +196,11 @@
 
         aerospace_window_manager {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                             &trans           &trans  &trans         &trans         &trans         &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                             &trans           &trans  &kp LA(LS(A))  &kp LA(LS(X))  &trans         &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans         &trans      &trans  &trans         &trans           &trans  &kp LA(LS(T))  &kp LA(LS(C))  &kp LA(LS(M))  &kp LA(LS(O))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans      &trans                                  &trans  &kp LA(LS(V))  &kp LA(LS(S))  &kp LA(LS(F))  &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &kp LA(LS(TAB))  &kp LA(LS(H))  &trans      &trans  &kp LA(LS(L))  &kp LA(LS(TAB))          &trans         &trans         &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans         &trans  &trans         &trans         &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans         &trans  &kp LA(LS(A))  &kp LA(LS(X))  &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LS(H))    &trans      &trans  &kp LA(LS(L))    &trans         &trans  &kp LA(LS(T))  &kp LA(LS(C))  &kp LA(LS(M))  &kp LA(LS(O))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                           &trans      &trans                                  &trans  &kp LA(LS(V))  &kp LA(LS(S))  &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &kp LA(LS(TAB))  &trans      &trans  &kp LA(LS(TAB))  &kp LA(LS(F))          &trans         &trans         &trans         &trans         &trans
             >;
         };
 
