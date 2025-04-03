@@ -135,8 +135,8 @@
         };
 
         mo_layer5 {
-            bindings = <&mo 5>;
-            key-positions = <30 32>;
+            bindings = <&mo 3>;
+            key-positions = <30 32 31>;
             layers = <0>;
         };
     };
@@ -150,7 +150,7 @@
 &kp TAB           &kp Q                  &homerow_mods LG(W) W      &kp E                      &homerow_mods LG(LS(R)) R  &homerow_mods LG(T) T  &tmux_prev_window                                                        &tmux_next_window   &homerow_mods LC(Y) Y  &kp U      &homerow_mods LG(LA(I)) I  &kp O                      &kp P             &kp LG(MINUS)
 &kp ESC           &kp A                  &homerow_mods LG(S) S      &kp D                      &kp F                      &kp G                  &tmux_prev_session  &kp LCTRL       &kp BACKSPACE      &none  &kp RCTRL  &tmux_next_session  &kp H                  &kp J      &kp K                      &kp L                      &kp BACKSPACE     &kp LC(B)
 &kp LSHFT         &homerow_mods LG(Z) Z  &homerow_mods LG(X) X      &homerow_mods LG(C) C      &homerow_mods LG(V) V      &kp B                                                      &none              &none                                 &kp N                  &kp M      &tapdance_comma_tab        &kp DOT                    &kp LA(NUMBER_1)  &kp LA(NUMBER_3)
-&none             &kp LEFT_ALT           &tapdance_cmd_cmdbacktick  &tapdance_cmd_cmdbacktick  &mo 6                                             &mo 1               &kp LEFT_SHIFT  &mo 3              &mo 3  &kp ENTER  &kp SPACE                                  &kp GRAVE  &tapdance_cmd_cmdbacktick  &tapdance_cmd_cmdbacktick  &kp RIGHT_ALT     &none
+&none             &kp LEFT_ALT           &tapdance_cmd_cmdbacktick  &tapdance_cmd_cmdbacktick  &mo 4                                             &mo 1               &kp LEFT_SHIFT  &mo 3              &mo 3  &kp ENTER  &kp SPACE                                  &kp GRAVE  &tapdance_cmd_cmdbacktick  &tapdance_cmd_cmdbacktick  &kp RIGHT_ALT     &none
             >;
         };
 
@@ -184,13 +184,13 @@
             >;
         };
 
-        raycast_window_manager {
+        app_launcher {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans         &trans             &trans         &trans         &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans         &trans             &trans         &trans         &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans         &kp LC(LA(LS(H)))  &kp LA(LS(J))  &kp LA(LS(K))  &kp LC(LA(LS(L)))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                         &trans             &trans         &trans         &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp LA(LS(F))                     &trans         &trans         &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans         &trans  &trans     &trans     &trans         &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans         &trans  &kp LA(A)  &kp LA(X)  &kp LA(LS(O))  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LS(H))    &trans      &trans  &kp LA(LS(L))    &trans         &none   &kp LA(T)  &kp LA(C)  &kp LA(M)      &kp LA(F)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                           &trans      &trans                                  &trans  &kp LA(V)  &kp LA(S)  &trans         &trans     &trans
+&trans  &trans  &trans  &trans  &trans          &mo 5   &kp LA(LS(TAB))  &trans      &trans  &kp LA(LS(TAB))  &kp LA(LS(F))          &trans     &trans     &trans         &trans     &trans
             >;
         };
 
@@ -201,16 +201,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LS(H))    &trans      &trans  &kp LA(LS(L))    &trans         &trans  &kp LA(LS(T))  &kp LA(LS(C))  &kp LA(LS(M))  &kp LA(LS(O))  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                           &trans      &trans                                  &trans  &kp LA(LS(V))  &kp LA(LS(S))  &trans         &trans         &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &kp LA(LS(TAB))  &trans      &trans  &kp LA(LS(TAB))  &kp LA(LS(F))          &trans         &trans         &trans         &trans         &trans
-            >;
-        };
-
-        app_launcher {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans     &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp LA(A)  &kp LA(X)  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &none   &kp LA(T)  &kp LA(C)  &kp LA(M)  &kp LA(O)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp LA(V)  &kp LA(S)  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans     &trans     &trans     &trans
             >;
         };
     };
