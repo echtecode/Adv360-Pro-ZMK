@@ -186,11 +186,11 @@
 
         app_launcher {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans         &trans  &trans     &trans     &trans         &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans         &trans  &kp LA(A)  &kp LA(X)  &kp LA(LS(O))  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LS(H))    &trans      &trans  &kp LA(LS(L))    &trans         &none   &kp LA(T)  &kp LA(C)  &kp LA(M)      &kp LA(E)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                           &trans      &trans                                  &trans  &kp LA(V)  &kp LA(S)  &trans         &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &mo 5   &kp LA(LS(TAB))  &trans      &trans  &kp LA(LS(TAB))  &kp LA(LS(F))          &trans     &trans     &trans         &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans         &trans  &trans     &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans         &trans  &kp LA(A)  &kp LA(X)  &kp LA(O)  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LS(H))    &trans      &trans  &kp LA(LS(L))    &trans         &none   &kp LA(T)  &kp LA(C)  &kp LA(M)  &kp LA(E)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                           &trans      &trans                                  &trans  &kp LA(V)  &kp LA(S)  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans          &mo 5   &kp LA(LS(TAB))  &trans      &trans  &kp LA(LS(TAB))  &kp LA(LS(F))          &trans     &trans     &trans     &trans     &trans
             >;
         };
 
