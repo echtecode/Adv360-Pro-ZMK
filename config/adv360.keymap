@@ -135,8 +135,14 @@
         };
 
         mo_layer5 {
-            bindings = <&mo 3>;
+            bindings = <&mo 5>;
             key-positions = <30 32 31>;
+            layers = <0>;
+        };
+
+        mo_layer5 {
+            bindings = <&mo 5>;
+            key-positions = <65 64>;
             layers = <0>;
         };
     };
