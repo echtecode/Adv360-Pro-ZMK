@@ -148,7 +148,7 @@
 
         mo_layer5_thumb {
             bindings = <&mo 5>;
-            key-positions = <66 32>;
+            key-positions = <31 65>;
             layers = <0>;
         };
     };
