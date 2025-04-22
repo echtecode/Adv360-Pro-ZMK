@@ -145,12 +145,6 @@
             key-positions = <31 30>;
             layers = <0>;
         };
-
-        hammerspoon_rectangle {
-            bindings = <&mo 4>;
-            key-positions = <17 18>;
-            layers = <0>;
-        };
     };
 
     keymap {
