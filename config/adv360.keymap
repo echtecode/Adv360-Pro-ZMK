@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_CMD_CMDBACKTICK";
             #binding-cells = <0>;
-            bindings = <&kp LCMD>, <&kp LG(GRAVE)>;
+            bindings = <&kp QUESTION>, <&kp LG(GRAVE)>;
         };
 
         homerow_mods_applauncher: homerow_mods_applauncher {
