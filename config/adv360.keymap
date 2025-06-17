@@ -85,6 +85,13 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        tapdance_shift: tapdance_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp LG(LEFT_SHIFT)>;
+        };
     };
 
     macros {
