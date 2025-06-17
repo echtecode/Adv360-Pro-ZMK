@@ -189,6 +189,12 @@
             key-positions = <30 32>;
             layers = <0>;
         };
+
+        kp_ESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <41 42>;
+            layers = <0>;
+        };
     };
 
     keymap {
