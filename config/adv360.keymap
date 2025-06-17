@@ -183,6 +183,12 @@
             key-positions = <31 30>;
             layers = <0>;
         };
+
+        mo_layer4 {
+            bindings = <&mo 4>;
+            key-positions = <30 32>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -190,11 +196,11 @@
 
         base {
             bindings = <
-&kp LG(GRAVE)  &kp N1  &kp N2                 &kp N3                &kp N4                     &kp N5  &kp LC(LS(TAB))                                                                   &kp LC(TAB)         &kp N6                 &kp N7                 &kp N8                     &kp N9      &kp N0         &kp LG(PLUS)
-&kp TAB        &kp Q   &homerow_mods LG(W) W  &kp E                 &homerow_mods LG(LS(R)) R  &kp T   &tmux_prev_window                                                                 &tmux_next_window   &homerow_mods LC(Y) Y  &kp U                  &homerow_mods LG(LA(I)) I  &kp O       &kp P          &kp LG(MINUS)
-&kp ESC        &kp A   &homerow_mods LG(S) S  &homerow_mods D LCMD  &homerow_mods LCTRL F      &kp G   &tmux_prev_session  &kp LA(NUMBER_1)  &kp BACKSPACE      &none  &kp LA(NUMBER_3)  &tmux_next_session  &kp H                  &homerow_mods RCTRL J  &homerow_mods RCMD K       &kp L       &kp BACKSPACE  &kp LC(B)
-&kp LSHFT      &kp Z   &kp X                  &kp C                 &kp V                      &kp B                                         &none              &none                                        &kp N                  &kp M                  &kp COMMA                  &kp PERIOD  &kp RIGHT_ALT  &kp RIGHT_SHIFT
-&none          &none   &none                  &none                 &mo 4                              &mo 1               &kp LEFT_SHIFT    &mo 3              &mo 3  &kp ENTER         &kp SPACE                                  &kp GRAVE              &none                      &none       &none          &none
+&kp LG(GRAVE)  &kp N1                 &kp N2                 &kp N3                 &kp N4                     &kp N5  &kp LC(LS(TAB))                                                                     &kp LC(TAB)         &kp N6                 &kp N7                 &kp N8                     &kp N9      &kp N0         &kp LG(PLUS)
+&kp TAB        &kp Q                  &homerow_mods LG(W) W  &kp E                  &homerow_mods LG(LS(R)) R  &kp T   &tmux_prev_window                                                                   &tmux_next_window   &homerow_mods LC(Y) Y  &kp U                  &homerow_mods LG(LA(I)) I  &kp O       &kp P          &kp LG(MINUS)
+&kp ESC        &kp A                  &homerow_mods LG(S) S  &homerow_mods D LCMD   &homerow_mods LCTRL F      &kp G   &tmux_prev_session    &kp LA(NUMBER_1)  &kp BACKSPACE      &none  &kp LA(NUMBER_3)  &tmux_next_session  &kp H                  &homerow_mods RCTRL J  &homerow_mods RCMD K       &kp L       &kp BACKSPACE  &kp LC(B)
+&kp LSHFT      &homerow_mods LG(Z) Z  &homerow_mods LG(X) X  &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B                                           &none              &none                                        &kp N                  &kp M                  &kp COMMA                  &kp PERIOD  &kp RIGHT_ALT  &kp RIGHT_SHIFT
+&none          &none                  &none                  &none                  &mo 4                              &esc_layer1 1 ESCAPE  &kp LEFT_SHIFT    &mo 3              &mo 3  &kp ENTER         &kp SPACE                                  &kp GRAVE              &none                      &none       &none          &none
             >;
         };
 
