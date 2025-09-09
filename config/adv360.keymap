@@ -213,7 +213,7 @@
 &kp TAB        &kp Q                  &kp W                  &kp E                  &homerow_mods LG(LS(R)) R  &kp T   &tmux_prev_window                                                                &tmux_next_window   &kp Y   &kp U      &homerow_mods LG(LA(I)) I  &kp O       &kp P          &kp LG(MINUS)
 &kp ESC        &kp A                  &homerow_mods LG(S) S  &kp D                  &kp F                      &kp G   &tmux_prev_session  &mo 4           &kp BACKSPACE      &none          &kp RCTRL  &tmux_next_session  &kp H   &kp J      &kp K                      &kp L       &kp BACKSPACE  &kp LC(B)
 &kp LSHFT      &homerow_mods LG(Z) Z  &homerow_mods LG(X) X  &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B                                       &kp LEFT_ALT       &kp RIGHT_ALT                                 &kp N   &kp M      &kp COMMA                  &kp PERIOD  &kp RIGHT_ALT  &kp RIGHT_SHIFT
-&none          &kp LEFT_ALT           &kp LCMD               &kp LCMD               &mo 4                              &mo 1               &kp LEFT_SHIFT  &mo 3              &mo 3          &kp ENTER  &kp SPACE                   &kp GRAVE  &kp LCMD                   &kp LCMD    &kp RIGHT_ALT  &none
+&none          &kp LEFT_ALT           &kp LCMD               &kp LCMD               &mo 2                              &mo 1               &kp LEFT_SHIFT  &mo 3              &mo 3          &kp ENTER  &kp SPACE                   &kp GRAVE  &kp LCMD                   &kp LCMD    &kp RIGHT_ALT  &none
             >;
         };
 
