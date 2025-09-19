@@ -250,8 +250,8 @@
         app_launcher {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                           &trans                       &trans             &trans     &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                           &trans                       &trans             &kp LA(P)  &kp LA(X)  &kp LA(D)  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans                  &trans      &trans  &kp LG(LC(LA(F)))        &trans                       &kp LG(LC(LA(F)))  &kp LA(T)  &kp LA(C)  &kp LA(F)  &kp LA(E)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                           &trans                       &trans             &kp LA(T)  &kp LA(X)  &kp LA(D)  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans                  &trans      &trans  &kp LG(LC(LA(F)))        &trans                       &kp LG(LC(LA(F)))  &kp LA(P)  &kp LA(C)  &kp LA(F)  &kp LA(E)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                      &trans      &trans                                                        &trans             &kp LA(Q)  &kp LA(S)  &kp LA(M)  &trans     &trans
 &trans  &trans  &trans  &trans  &trans          &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LEFT_ARROW))  &trans      &trans  &kp LA(LC(RIGHT_ARROW))  &kp LA(LC(LG(RIGHT_ARROW)))                     &trans     &trans     &trans     &trans     &trans
             >;
