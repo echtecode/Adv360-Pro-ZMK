@@ -191,15 +191,15 @@
             layers = <0>;
         };
 
-        mo_layer4 {
+        mo_layer4_left {
             bindings = <&mo 4>;
             key-positions = <30 32>;
             layers = <0>;
         };
 
-        kp_ESC {
-            bindings = <&kp ESCAPE>;
-            key-positions = <41 42>;
+        mo_layer4_right {
+            bindings = <&mo 4>;
+            key-positions = <41 43>;
             layers = <0>;
         };
     };
@@ -253,7 +253,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                           &trans                       &kp LA(LS(G))      &kp LA(LS(T))  &kp LA(LS(X))  &kp LA(LS(M))  &kp LA(LS(N))  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans                  &trans      &trans  &trans                   &trans                       &kp LG(LC(LA(F)))  &kp LA(LS(Z))  &kp LA(LS(C))  &kp LA(LS(F))  &kp LA(LS(E))  &trans
 &trans  &trans  &trans  &to 5   &trans  &trans                                                      &trans      &trans                                                        &kp LA(LS(Q))      &kp LA(LS(V))  &kp LA(LS(S))  &kp LA(LS(D))  &kp LA(LS(W))  &trans
-&trans  &trans  &trans  &trans  &trans          &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LEFT_ARROW))  &trans      &trans  &kp LA(LC(RIGHT_ARROW))  &kp LA(LC(LG(RIGHT_ARROW)))                     &trans         &trans         &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans          &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LEFT_ARROW))  &trans      &trans  &kp LA(LC(RIGHT_ARROW))  &kp LA(LC(LG(RIGHT_ARROW)))                     &kp LA(LS(U))  &kp LA(LS(B))  &trans         &trans         &trans
             >;
         };
 
