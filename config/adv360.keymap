@@ -127,34 +127,34 @@
             wait-ms = <5>;
         };
 
-        tmux_next_session: tmux_next_session {
+        herdr_next_workspace: tmux_next_session {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp RIGHT_PARENTHESIS>;
+            bindings = <&kp LC(B) &kp RIGHT_BRACE>;
             label = "TMUX_NEXT_SESSION";
             wait-ms = <5>;
         };
 
-        tmux_prev_session: tmux_prev_session {
+        herdr_prev_workspace: tmux_prev_session {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp LEFT_PARENTHESIS>;
+            bindings = <&kp LC(B) &kp LEFT_BRACE>;
             label = "TMUX_PREV_SESSION";
             wait-ms = <5>;
         };
 
-        tmux_next_window: tmux_next_window {
+        herdr_next_agent: tmux_next_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp N>;
+            bindings = <&kp LC(B) &kp RIGHT_BRACKET>;
             label = "TMUX_NEXT_WINDOW";
             wait-ms = <5>;
         };
 
-        tmux_prev_window: tmux_prev_window {
+        herdr_prev_agent: tmux_prev_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp N>;
+            bindings = <&kp LC(B) &kp LEFT_BRACKET>;
             label = "TMUX_PREV_WINDOW";
             wait-ms = <5>;
         };
@@ -209,11 +209,11 @@
 
         base {
             bindings = <
-&kp LG(S)     &kp N1                 &kp N2                 &kp N3                 &kp N4                     &kp N5  &kp LC(LS(TAB))                                                                                  &kp LC(TAB)         &kp N6  &kp N7     &kp N8         &kp N9      &kp N0         &kp LA(NUMBER_1)
-&kp TAB       &kp Q                  &kp W                  &kp E                  &homerow_mods LG(LS(R)) R  &kp T   &tmux_prev_window                                                                                &tmux_next_window   &kp Y   &kp U      &kp I          &kp O       &kp P          &kp LA(NUMBER_1)
-&kp ESC       &kp A                  &kp S                  &kp D                  &homerow_mods LCMD F       &kp G   &tmux_prev_session  &kp LCTRL       &kp BACKSPACE      &kp LC(SPACE)  &tapdance_cmd_cmdbacktick  &tmux_next_session  &kp H   &kp J      &kp K          &kp L       &kp BACKSPACE  &kp LC(B)
-&kp LEFT_ALT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X  &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B                                       &kp LEFT_ALT       &kp RIGHT_ALT                                                 &kp N   &kp M      &kp COMMA      &kp PERIOD  &kp LG(LA(I))  &kp LG(SLASH)
-&none         &kp LEFT_ALT           &kp LCMD               &kp LEFT_ALT           &kp LCTRL                          &mo 1               &kp LEFT_SHIFT  &mo 3              &mo 3          &kp ENTER                  &kp SPACE                   &kp RCTRL  &kp RIGHT_ALT  &kp LCMD    &kp LG(LA(U))  &kp CAPSLOCK
+&kp LG(S)     &kp N1                 &kp N2                 &kp N3                 &kp N4                     &kp N5  &kp LC(LS(TAB))                                                                                     &kp LC(TAB)            &kp N6  &kp N7     &kp N8         &kp N9      &kp N0         &kp LA(NUMBER_1)
+&kp TAB       &kp Q                  &kp W                  &kp E                  &homerow_mods LG(LS(R)) R  &kp T   &herdr_prev_agent                                                                                   &herdr_next_agent      &kp Y   &kp U      &kp I          &kp O       &kp P          &kp LA(NUMBER_1)
+&kp ESC       &kp A                  &kp S                  &kp D                  &homerow_mods LCMD F       &kp G   &herdr_prev_workspace  &kp LCTRL       &kp BACKSPACE      &kp LC(SPACE)  &tapdance_cmd_cmdbacktick  &herdr_next_workspace  &kp H   &kp J      &kp K          &kp L       &kp BACKSPACE  &kp LC(B)
+&kp LEFT_ALT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X  &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B                                          &kp LEFT_ALT       &kp RIGHT_ALT                                                    &kp N   &kp M      &kp COMMA      &kp PERIOD  &kp LG(LA(I))  &kp LG(SLASH)
+&none         &kp LEFT_ALT           &kp LCMD               &kp LEFT_ALT           &kp LCTRL                          &mo 1                  &kp LEFT_SHIFT  &mo 3              &mo 3          &kp ENTER                  &kp SPACE                      &kp RCTRL  &kp RIGHT_ALT  &kp LCMD    &kp LG(LA(U))  &kp CAPSLOCK
             >;
         };
 
