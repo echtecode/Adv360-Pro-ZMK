@@ -146,7 +146,7 @@
         herdr_next_agent: tmux_next_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp RIGHT_BRACKET>;
+            bindings = <&kp LC(B) &kp RIGHT_PARENTHESIS>;
             label = "TMUX_NEXT_WINDOW";
             wait-ms = <5>;
         };
@@ -154,7 +154,7 @@
         herdr_prev_agent: tmux_prev_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp LEFT_BRACKET>;
+            bindings = <&kp LC(B) &kp LEFT_PARENTHESIS>;
             label = "TMUX_PREV_WINDOW";
             wait-ms = <5>;
         };
