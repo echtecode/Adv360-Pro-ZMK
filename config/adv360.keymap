@@ -249,11 +249,11 @@
 
         app_launcher {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans                                                                                           &trans                       &trans             &trans         &kp LA(LS(N8))  &kp LA(LS(O))  &trans         &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans                                                                                           &trans                       &kp LA(LS(G))      &kp LA(LS(T))  &kp LA(LS(X))   &kp LA(LS(M))  &kp LA(LS(N))  &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans                      &trans                  &trans      &trans  &kp LA(LS(N8))           &trans                       &kp LG(LC(LA(F)))  &kp LA(LS(Z))  &kp LA(LS(C))   &kp LA(LS(W))  &kp LA(LS(E))  &trans
-&trans      &trans  &trans  &to 5   &trans  &trans                                                      &trans      &trans                                                        &kp LA(LS(Q))      &kp LA(LS(V))  &kp LA(LS(S))   &kp LA(LS(D))  &kp LA(LS(F))  &trans
-&trans      &trans  &trans  &trans  &trans          &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LEFT_ARROW))  &trans      &trans  &kp LA(LC(RIGHT_ARROW))  &kp LA(LC(LG(RIGHT_ARROW)))                     &kp LA(LS(U))  &kp LA(LS(B))   &trans         &trans         &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans                                                                                           &trans                       &trans             &trans         &trans         &trans          &trans         &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans                                                                                           &trans                       &trans             &kp LA(LS(Z))  &kp LA(LS(X))  &kp LA(LS(M))   &kp LA(LS(N))  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans                      &trans                  &trans      &trans  &trans                   &trans                       &kp LG(LC(LA(F)))  &kp LA(LS(T))  &kp LA(LS(C))  &kp LA(LS(N8))  &kp LA(LS(F))  &trans
+&trans      &trans  &trans  &to 5   &trans  &trans                                                      &trans      &trans                                                        &trans             &trans         &kp LA(LS(S))  &trans          &trans         &trans
+&trans      &trans  &trans  &trans  &trans          &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LEFT_ARROW))  &trans      &trans  &kp LA(LC(RIGHT_ARROW))  &kp LA(LC(LG(RIGHT_ARROW)))                     &trans         &trans         &trans          &trans         &trans
             >;
         };
 
